@@ -1,0 +1,8 @@
+  checkFormValidity() {
+    for (const controlName in this.Form.controls) {
+      if (this.Form.controls[controlName].invalid) {
+        console.log(`Form control "${controlName}" is invalid.`);
+        // Handle the invalid control as needed.
+      }
+    }
+  }
